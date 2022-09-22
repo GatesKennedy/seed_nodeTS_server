@@ -1,0 +1,47 @@
+{
+  "name": "seed_node_api",
+  "version": "1.0.0",
+  "description": "seed template for nodeTS with express",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint . --ext .ts --fix",
+    "dev": "nodemon",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GatesKennedy/seed_node_api.git"
+  },
+  "keywords": [
+    "seed",
+    "node",
+    "ts",
+    "express"
+  ],
+  "author": "Conor Kennedy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GatesKennedy/seed_node_api/issues"
+  },
+  "homepage": "https://github.com/GatesKennedy/seed_node_api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.23.1",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
